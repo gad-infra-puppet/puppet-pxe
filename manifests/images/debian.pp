@@ -8,7 +8,7 @@ define pxe::images::debian(
 
   if $baseurl == '' {
     case $os {
-      "debian": { $srclocation = "http://ftp.debian.org/$os/dists" }
+      "debian": { $srclocation = "http://ftp.jp.debian.org/$os/dists" }
       "ubuntu": { $srclocation = "http://archive.ubuntu.com/$os/dists" }
       default:  { $srclocation = "http://mirrors.kernel.org/$os/dists" }
     }
